@@ -13,3 +13,10 @@ class MahasiswaController extends Controller
         dump($result);
     }
 }
+
+public function update()
+{
+    $result = DB::update('update mahasiswas set nama_mahasiswa = "Ali", 
+    updated_at = now() where npm = ?', [1922110006]);
+    dump($result);
+}
